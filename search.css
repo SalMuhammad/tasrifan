@@ -1,0 +1,52 @@
+*{
+ margin: 0;
+ padding: 0;
+ --lup:white;
+ --hlup:30px;
+ --wlup:30px;
+ box-sizing: border-box;
+}
+
+.hero{
+ padding-top: 10px;
+ background-image: linear-gradient(45deg,deeppink,deepskyblue);
+ height: 100vh;
+}
+
+.box-cari{
+ border-radius: 55px;
+ width: 70%;
+ margin: 19px auto;
+ overflow: hidden;
+ background-color: greenyellow;
+ display: flex;
+ justify-content:space-between;
+}
+
+.lup{
+ width: 10%;
+ background: turquoise;
+}
+
+.lup span{
+ border-radius: 50%;
+ display: block;
+ width: var(--wlup);
+ height: var(--hlup);
+ border: 5px solid var(--lup);
+}
+
+.lup span::before{
+ content: '';
+ width: 5px;
+ display: block;
+ height: 20px;
+ background-color: var(--lup);
+}
+
+.box-cari input{
+ height: 50px;
+ border: none;
+ width: 90%;
+ outline: none;
+}
